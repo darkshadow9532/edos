@@ -50,8 +50,12 @@ app.get("/", (req, res) => {
 // require("./app/routes/view.routes")(app);
 // require("./app/routes/func.routes")(app);
 
+
+require("./app/routes/compareList.routes")(app);
+require("./app/routes/numList.routes")(app);
+
 // set port, listen for requests
 const PORT = process.env.PORT || 9532;
-app.listen(PORT, () => {
+app.listen(PORT, "192.168.0.127", () => {
   console.log(`Server is running on port ${PORT}.`);
 });
