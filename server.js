@@ -53,6 +53,7 @@ app.get("/", (req, res) => {
 
 require("./app/routes/compareList.routes")(app);
 require("./app/routes/numList.routes")(app);
+require("./app/routes/tool.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 9532;

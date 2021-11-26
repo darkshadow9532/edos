@@ -2,7 +2,7 @@ module.exports = (mongoose, mongoosePaginate) => {
     var schema = mongoose.Schema(
       {
         name: String,
-        numList: [Boolean]
+        numList: [String]
       },
       { timestamps: true }
     );
