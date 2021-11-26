@@ -108,14 +108,6 @@ async function f4b(arr, phaseCode, sign, margin){
 // }
 
 function createCompareList(arr, phaseCode, sign, margin){
-    if(!phaseCode){
-        var CompareListData = await f4a(arr,sign,margin);
-        var compareList = new CompareList({
-            phaseCode: phaseCode,
-            phaseStep: 
-        })
-    }
-    else{
-        var CompareListData = await f4b(arr, phaseCode, sign, margin);
-    }
+    var CompareListData = await f4b(arr, phaseCode, sign, margin);
+    
 }
