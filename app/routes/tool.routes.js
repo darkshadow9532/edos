@@ -12,6 +12,17 @@ module.exports = app => {
     // router.get('/countMatchingElements', Tools.countMatchingElements );
     // router.get('/getLastStep', Tools.getLastStep );
 
+    // createNumNumList Function Test:
+
+    // router.get("/findUniqueValues", Tools.findUniqueValues);
+    // router.get("/elementCount", Tools.elementCount);
+    // router.get("/f1", Tools.f1);
+    // router.get("/f2", Tools.f2);
+    // router.get("/f3", Tools.f3);
+    router.post("/createNewNumList", Tools.createNewNumList);
+
+    // router.get("/createFullElement", )
+
     // Main Routes
     router.post('/createCompareList', Tools.createCompareList );
 
